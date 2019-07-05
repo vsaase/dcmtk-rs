@@ -27,7 +27,6 @@ fn main() {
                     printf("SOP Class UID: %s\n", sopClassUID.c_str());
                 if (metainfo.findAndGetOFString(DCM_TransferSyntaxUID, xferUID).good())
                     printf("Transfer Syntax UID: %s\n", xferUID.c_str());
-                printf("Hello, DCMTK!\n");
             }
             
         });
