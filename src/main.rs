@@ -13,23 +13,23 @@ cpp!{{
 fn main() {
     unsafe {
         cpp!([] {
-            //OFCondition status;
+            OFCondition status;
             
             DcmMetaInfo metainfo;
             status = metainfo.loadFile("test.dcm");
-            /*
+            
+            status.good();
+            
             if (status.good())
             {
                 OFString sopClassUID, xferUID;
                 if (metainfo.findAndGetOFString(DCM_MediaStorageSOPClassUID, sopClassUID).good())
-                    printf("SOP Class UID: %s");
+                    printf("SOP Class UID: %s\n", sopClassUID.c_str());
                 if (metainfo.findAndGetOFString(DCM_TransferSyntaxUID, xferUID).good())
-                    printf("Transfer Syntax UID: %s", xferUID);
-                    //COUT << "Transfer Syntax UID: " << xferUID << OFendl;
-                //metainfo.print(COUT);
+                    printf("Transfer Syntax UID: %s\n", xferUID.c_str());
+                printf("Hello, DCMTK!\n");
             }
-            */
-            printf("Hello, DCMTK!\n");
+            
         });
     }
 }
