@@ -76,20 +76,13 @@ dependencies = [
 name = "dcmtk"
 version = "0.0.1"
 dependencies = [
- "cc 1.0.37 (registry+https://github.com/rust-lang/crates.io-index)",
  "cpp 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "cpp_build 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "libc 0.2.58 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "lazy_static"
 version = "1.3.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-
-[[package]]
-name = "libc"
-version = "0.2.58"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
@@ -176,7 +169,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum cpp_common 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "31beb04748ca3519ed4008c4ee3ed0ff415ea15576dc348604fb39ab1c3e9a30"
 "checksum cpp_macros 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "5cf2a0c518092e2840d1bd2f10a6823a9b1f3d47bbcb0dad2f846689064f2dcf"
 "checksum lazy_static 1.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "bc5729f27f159ddd61f4df6228e827e86643d4d3e7c32183cb30a1c08f604a14"
-"checksum libc 0.2.58 (registry+https://github.com/rust-lang/crates.io-index)" = "6281b86796ba5e4366000be6e9e18bf35580adf9e63fbe2294aadb587613a319"
 "checksum memchr 2.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "2efc7bc57c883d4a4d6e3246905283d8dae951bb3bd32f49d6ef297f546e1c39"
 "checksum proc-macro2 0.4.30 (registry+https://github.com/rust-lang/crates.io-index)" = "cf3d2011ab5c909338f7887f4fc896d35932e29146c12c8d01da6b22a80ba759"
 "checksum quote 0.6.12 (registry+https://github.com/rust-lang/crates.io-index)" = "faf4799c5d274f3868a4aae320a0a182cbd2baee377b378f080e16a23e9d80db"

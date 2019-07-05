@@ -4,6 +4,7 @@
 extern crate cpp;
 
 cpp!{{
+    #include <stdio.h>
     #include <dcmtk/config/osconfig.h>
     #include <dcmtk/dcmdata/dctk.h>
     #include <dcmtk/dcmdata/dcistrmf.h>
@@ -12,20 +13,23 @@ cpp!{{
 fn main() {
     unsafe {
         cpp!([] {
-            OFCondition status;
-
-            /* approach 1 */
+            //OFCondition status;
+            
             DcmMetaInfo metainfo;
             status = metainfo.loadFile("test.dcm");
+            /*
             if (status.good())
             {
                 OFString sopClassUID, xferUID;
                 if (metainfo.findAndGetOFString(DCM_MediaStorageSOPClassUID, sopClassUID).good())
-                    COUT << "SOP Class UID: " << sopClassUID << OFendl;
+                    printf("SOP Class UID: %s");
                 if (metainfo.findAndGetOFString(DCM_TransferSyntaxUID, xferUID).good())
-                    COUT << "Transfer Syntax UID: " << xferUID << OFendl;
-                metainfo.print(COUT);
+                    printf("Transfer Syntax UID: %s", xferUID);
+                    //COUT << "Transfer Syntax UID: " << xferUID << OFendl;
+                //metainfo.print(COUT);
             }
+            */
+            printf("Hello, DCMTK!\n");
         });
     }
 }
