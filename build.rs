@@ -18,8 +18,9 @@ fn main()
 fn compileCPlusPlusGlueCode()
 {
 	Config::new()
-        //.include("lib/dcmtk/dcmdata/libsrc")
-        //.include("lib/dcmtk/dcmdata/libi2d")
+        .include("lib/dcmtk/dcmdata/libsrc")
+        .include("lib/dcmtk/ofstd/libsrc")
+        .include("lib/dcmtk/oflog/libsrc")
         .flag("-w")
         .build("src/main.rs");
 }
